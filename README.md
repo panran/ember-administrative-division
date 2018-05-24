@@ -1,11 +1,11 @@
-# ui-compnent
+# ui-component
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ui-compnent`
+* `cd ui-component`
 * `npm install`
 
 ## Running

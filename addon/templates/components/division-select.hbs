@@ -1,0 +1,7 @@
+{{#power-select selected=selected
+    options=options
+    allowClear=allowClear
+    placeholder=placeholder
+    onchange=(action 'changeSelection') as |option|}}
+  {{option.name}}
+{{/power-select}}
