@@ -47,9 +47,6 @@
 80717个社区居民委员会（neighborhood committee）【社区叫neighborhood或community）】；
 623669个村民委员会（village committee）或村民小组（village group）【包括行政村（administrative village）和自然村（natural village）】。
 
-# ui-component
-
-This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
