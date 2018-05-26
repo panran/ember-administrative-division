@@ -1,6 +1,57 @@
-<h2 id="title">楼兰 · 中国行政区划</h2>
+<h2 id="title">中国行政区划</h2>
 
 <h3>手动生成多级下拉选项</h3>
 
 {{province-select options=model selected=selectedProvince}}
+
+{{prefecture-select options=filteredPrefectures selected=selectedPrefecture}}
+
+{{county-select options=filteredCounties selected=selectedCounty}}
+
+{{township-select options=filteredTownships selected=selectedTownship}}
+
+{{village-select options=filteredVillages selected=selectedVillage}}
+
+<h3>自动生成多级下拉选项</h3>
+
+<h4>省份 > 地区 > 县 > 乡 > 村</h4>
+{{divisions-select options=model selectedProvince=selectedProvince
+  selectedPrefecture=selectedPrefecture
+  selectedCounty=selectedCounty
+  selectedTownship=selectedTownship
+  selectedVillage=selectedVillage
+}}
+
+<h4>地区 > 县 > 乡 > 村</h4>
+{{divisions-select first='prefecture' last='village' options=prefectures selectedPrefecture=selectedPrefecture
+  selectedCounty=selectedCounty
+  selectedTownship=selectedTownship
+  selectedVillage=selectedVillage
+}}
+
+<h4>地区 > 县 > 乡</h4>
+{{divisions-select first='prefecture' last='township' options=prefectures selectedPrefecture=selectedPrefecture
+  selectedCounty=selectedCounty
+  selectedTownship=selectedTownship
+}}
+
+<h4>地区 > 县</h4>
+{{divisions-select first='prefecture' last='county' options=prefectures selectedPrefecture=selectedPrefecture
+  selectedCounty=selectedCounty
+}}
+
+<h4>地区</h4>
+{{divisions-select first='prefecture' last='prefecture' options=prefectures selectedPrefecture=selectedPrefecture selected1=selected1}}
+
+<ul>
+    <li>省份：{{selectedProvince.name}}</li>
+    <li>地区：{{selectedPrefecture.name}}</li>
+    <li>县：{{selectedCounty.name}}</li>
+    <li>乡：{{selectedTownship.name}}</li>
+    <li>村：{{selectedVillage.name}}</li>
+</ul>
+
+
+
+
 

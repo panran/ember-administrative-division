@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'administrative-division'
+  name: 'ember-administrative-division'
 };

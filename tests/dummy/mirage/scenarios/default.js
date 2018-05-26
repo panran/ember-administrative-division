@@ -7,4 +7,8 @@ export default function(server) {
 
   // server.createList('post', 10);
     server.loadFixtures('provinces');
+    server.loadFixtures('prefectures');
+    server.loadFixtures('counties');
+    server.loadFixtures('townships');
+    server.loadFixtures('villages');
 }

@@ -1,3 +1,3 @@
-import DivisionsSelect from 'administrative-division/components/divisions-select';
+import DivisionsSelect from 'ember-administrative-division/components/divisions-select';
 
 export default DivisionsSelect

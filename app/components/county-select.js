@@ -1,3 +1,3 @@
-import CountySelect from 'administrative-division/components/county-select';
+import CountySelect from 'ember-administrative-division/components/county-select';
 
 export default CountySelect

@@ -31,4 +31,19 @@ export default function() {
     this.get('/prefectures', (schema, request) => {
       return schema.prefectures.where({ province_id: request.queryParams['filter[province_id]']});
     });
+
+    this.get('/counties', (schema, request) => {
+      return schema.counties.where({ prefecture_id: request.queryParams['filter[prefecture_id]']});
+    });
+    this.get('/counties/:id');
+
+    this.get('/townships', (schema, request) => {
+      return schema.townships.where({ county_id: request.queryParams['filter[county_id]']})
+    });
+    this.get('/townships/:id');
+
+    this.get('/villages', (schema, request) => {
+      return schema.villages.where({ township_id: request.queryParams['filter[township_id]']})
+    });
+    this.get('/villages/:id');
 }
