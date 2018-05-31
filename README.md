@@ -4,8 +4,8 @@
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ui-component`
-* `npm install`
+* `cd <this repository>`
+* `npm install` or `yarn install`
 
 ## Running
 
